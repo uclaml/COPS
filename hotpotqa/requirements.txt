@@ -1,0 +1,12 @@
+faiss
+openai
+transformers
+logging
+re
+typing
+itertools
+functools
+wikienv
+wrappers
+requests
+

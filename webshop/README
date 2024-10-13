@@ -1,0 +1,13 @@
+# Webshop experiment code
+
+Code modified from [LATS](https://github.com/lapisrocks/LanguageAgentTreeSearch)
+
+Setup your local LLM using an OpenAI API compatible endpoint, then set it up in utils.py. We recommend [SGLang](https://github.com/sgl-project/sglang)
+
+Moreover, in lats.py, the address for Webshop server is set as http://127.0.0.1:3000
+
+Example command:
+
+        python run.py --model_size 8 --temperature 0.0 --task_start_index 0 --task_end_index 50 --cot_size 5 \
+        --prompt_sample 'cot' --n_generate_sample 1  --n_evaluate_sample 1 \
+        --iteration 10 --algorithm 'tot' --cot_method 'knn' --run_name 'webshop_new'

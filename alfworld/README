@@ -1,0 +1,16 @@
+# Alfworld experiment code
+
+Code modified from [Reflexion](https://github.com/noahshinn/reflexion)
+
+Setup your local LLM using an OpenAI API compatible endpoint, then set it up in utils.py. We recommend [SGLang](https://github.com/sgl-project/sglang)
+
+Example command:
+
+python main.py --num_trials 10 --num_envs 134 --plan_model_size 8 \
+        --reflect_model_size 8 --cluster_size 134  --mem_size 0 \
+        --run_name 'alfworld_new' \
+        --mem_selection_method 'fifo' \
+        --in_context_trajactory_size 5 \
+        --online_embedding_model_size 7 \
+        --trajactory_search_method 'knn' \
+        --use_success_trajectory
