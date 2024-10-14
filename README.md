@@ -31,7 +31,7 @@ To reproduce results on each benchmarks, refer to their subdirectory.
 
 ## Model Sever
 
-To accerlerate the running efficiency of COPS, we implement a data-paralysis serving router and engine with SGLang backend, i.e., the [ModelServer](https://github.com/zhaochenyang20/ModelServer). After configuration, you can get a response or embedding from these kind of commands:
+To accelerate the running efficiency of COPS, we implement a data-paralysis serving router and engine with SGLang backend, i.e., the [ModelServer](https://github.com/zhaochenyang20/ModelServer). After configuration, you can get a response or embedding from these kind of commands:
 
 ```
 from model_sever import ModelServer
