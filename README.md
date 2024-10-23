@@ -1,6 +1,6 @@
 # CoPS: Empowering LLM Agents with Provable Cross-Task Experience Sharing
 
-This repo holds the code for [CoPS: Empowering LLM Agents with Provable Cross-Task Experience Sharing]() by Chen Yang, Chenyang Zhao, Quanquan Gu and Dongruo Zhou.  
+This repo holds the code for [CoPS: Empowering LLM Agents with Provable Cross-Task Experience Sharing](https://arxiv.org/abs/2410.16670) by Chen Yang, Chenyang Zhao, Quanquan Gu and Dongruo Zhou.  
 
 ![CoPS](./figures/illusion.png)
 
@@ -33,7 +33,10 @@ To reproduce results on each benchmarks, refer to their subdirectory.
 
 To accelerate the running efficiency of COPS, we implement a data-paralysis serving router and engine with SGLang backend, i.e., the [ModelServer](https://github.com/zhaochenyang20/ModelServer). After configuration, you can get a response or embedding from these kind of commands:
 
-```
+<details>
+<summary>ModelSever Command</summary>
+
+```python
 from model_sever import ModelServer
 message = [
     {
@@ -82,6 +85,8 @@ embedding = server.get_completion_or_embedding(
 # get the embedding of a 7b embedding model, i.e. `Alibaba-NLP/gte-Qwen1.5-7B-instruct`
 print(embedding[:10])
 ```
+
+</details>
 
 ## Other Notes
 
