@@ -85,12 +85,18 @@ print(embedding[:10])
 
 ## Other Notes
 
-Check out the code for the original code [TODO]()
-
 For all questions, contact [cya2@iu.edu](cya2@iu.edu)
 
 ## Cite
 
 ```bibtex
-
+@misc{yang2024copsempoweringllmagents,
+      title={CoPS: Empowering LLM Agents with Provable Cross-Task Experience Sharing}, 
+      author={Chen Yang and Chenyang Zhao and Quanquan Gu and Dongruo Zhou},
+      year={2024},
+      eprint={2410.16670},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.16670}, 
+}
 ```
